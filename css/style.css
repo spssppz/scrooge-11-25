@@ -854,8 +854,7 @@ body::after {
 }
 
 .benefit {
-  backdrop-filter: blur(200px);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
   border: 0.0625rem solid #6fbe3e;
   border-radius: 1.5625rem;
   min-height: 16.8125rem;
@@ -875,8 +874,10 @@ body::after {
   position: relative;
   padding: 1.25rem 1rem;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .benefit__icon:not(:last-child) {
@@ -992,7 +993,6 @@ body::after {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
-  min-height: 2.625rem;
 }
 
 .plan__text:not(:last-child) {
@@ -1361,6 +1361,16 @@ body::after {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 17.5rem;
             flex: 0 0 17.5rem;
+  }
+
+  .plan__text {
+    min-height: 2.625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -2087,6 +2097,10 @@ body::after {
 
   .right-footer__social-link:hover svg path {
     fill: #6fbe3e;
+  }
+
+  .benefit:hover {
+    background: rgba(111, 190, 62, 0.17);
   }
 
   .plan:hover {
