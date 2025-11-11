@@ -824,6 +824,33 @@ body::after {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.25rem;
+  position: relative;
+}
+
+.benefits__cols::before,
+.benefits__cols::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-radius: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fbe3e), to(rgba(111, 190, 62, 0)));
+  background: linear-gradient(180deg, #6fbe3e 0%, rgba(111, 190, 62, 0) 100%);
+  -webkit-filter: blur(70px);
+          filter: blur(70px);
+  width: 30%;
+  height: 20%;
+}
+
+.benefits__cols::before {
+  bottom: 20%;
+}
+
+.benefits__cols::after {
+  top: 20%;
 }
 
 .benefit {
@@ -845,7 +872,10 @@ body::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   padding: 1.25rem 1rem;
+  position: relative;
+  z-index: 2;
   text-align: center;
 }
 
@@ -872,10 +902,30 @@ body::after {
 .plans {
   background: #101010;
   padding: 5rem 0rem 3.75rem;
+  position: relative;
+}
+
+.no-webp .plans::after {
+  background: url("../img/plans/bg.png") 50%/cover no-repeat; }
+
+.plans::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 100%;
+  aspect-ratio: 1440/1002;
+  mix-blend-mode: lighten;
+  z-index: 2;
 }
 
 .plans__title {
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
 .plans__title:not(:last-child) {
@@ -888,6 +938,8 @@ body::after {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.25rem;
+  position: relative;
+  z-index: 3;
 }
 
 .plans__cols:not(:last-child) {
@@ -899,6 +951,8 @@ body::after {
   text-align: center;
   font-style: italic;
   font-size: 0.875rem;
+  position: relative;
+  z-index: 3;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.5);
   margin: 0 auto;
@@ -917,6 +971,10 @@ body::after {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1.5625rem 1.75rem 1.25rem;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .plan__label {
@@ -1003,7 +1061,7 @@ body::after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 0.375rem;
-  margin: 0rem -0.5rem 0 -0.25rem;
+  margin: 0rem -0.875rem;
 }
 
 .plan__price-month {
@@ -1388,6 +1446,10 @@ body::after {
     grid-template-columns: 1fr 1fr;
   }
 
+  .plan__item_pc {
+    display: none;
+  }
+
   .offer__left {
     margin-right: 1.875rem;
   }
@@ -1551,6 +1613,11 @@ body::after {
     margin-bottom: 1.75rem;
   }
 
+  .benefits__cols::before,
+  .benefits__cols::after {
+    display: none;
+  }
+
   .benefits__cols {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -1568,6 +1635,10 @@ body::after {
 
   .benefit__descr {
     font-size: 1.125rem;
+  }
+
+  .plans::after {
+    display: none;
   }
 
   .plans {
@@ -2017,8 +2088,15 @@ body::after {
   .right-footer__social-link:hover svg path {
     fill: #6fbe3e;
   }
+
+  .plan:hover {
+    -webkit-box-shadow: 0 0.625rem 1.875rem 0 rgba(111, 190, 62, 0.24);
+            box-shadow: 0 0.625rem 1.875rem 0 rgba(111, 190, 62, 0.24);
+  }
 }
 
 .webp .footer::after { background: url(../img/bgs/footer.webp) 50% 0/cover no-repeat; }
+
+.webp .plans::after { background: url(../img/plans/bg.webp) 50%/cover no-repeat; }
 
 .webp .offer::after { background: #6fbe3e url(../img/bgs/offer.webp) 50%/cover no-repeat; }
