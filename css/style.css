@@ -1088,6 +1088,8 @@ body::after {
   padding: 0.1875rem;
   min-width: 8.1875rem;
   text-align: center;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 .plan__price-year span:first-child {
@@ -1114,6 +1116,9 @@ body::after {
 .plan__btn {
   padding: 0.625rem 1.25rem;
   font-size: 0.875rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 500;
 }
 
 .models {
@@ -2106,6 +2111,15 @@ body::after {
   .plan:hover {
     -webkit-box-shadow: 0 0.625rem 1.875rem 0 rgba(111, 190, 62, 0.24);
             box-shadow: 0 0.625rem 1.875rem 0 rgba(111, 190, 62, 0.24);
+  }
+
+  .plan__price-year:hover {
+    background: #3f7f1c;
+  }
+
+  .plan__btn:hover {
+    color: #000;
+    background-color: #fff;
   }
 }
 
