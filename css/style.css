@@ -929,6 +929,9 @@ body::after {
   text-align: center;
   position: relative;
   z-index: 3;
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: 900;
 }
 
 .plans__title:not(:last-child) {
@@ -973,7 +976,7 @@ body::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1.5625rem 1.75rem 1.25rem;
+  padding: 1.5625rem 1.5625rem 1.25rem;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
@@ -982,7 +985,7 @@ body::after {
 
 .plan__label {
   font-weight: 500;
-  font-size: 1.5625rem;
+  font-size: 2.25rem;
   line-height: 1.52;
 }
 
@@ -992,7 +995,7 @@ body::after {
 
 .plan__text {
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
 }
@@ -1003,7 +1006,7 @@ body::after {
 
 .plan__cap {
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 
@@ -1047,7 +1050,7 @@ body::after {
 
 .plan__descr {
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.2;
 }
@@ -1063,7 +1066,7 @@ body::after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 0.1875rem;
-  margin: 0rem -0.9375rem;
+  margin: 0rem -0.625rem;
 }
 
 .plan__price-month {
@@ -1072,7 +1075,7 @@ body::after {
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
   border-radius: 0.5rem;
-  padding: 0.1875rem;
+  padding: 0.1875rem 0.625rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -1671,6 +1674,10 @@ body::after {
     padding: 3.125rem 0rem;
   }
 
+  .plans__title {
+    font-size: 3.75rem;
+  }
+
   .plans__cols {
     gap: 0.625rem;
   }
@@ -1685,6 +1692,22 @@ body::after {
 
   .plan {
     padding: 1.375rem 1.5625rem;
+  }
+
+  .plan__label {
+    font-size: 1.875rem;
+  }
+
+  .plan__text {
+    font-size: 1rem;
+  }
+
+  .plan__cap {
+    font-size: 1rem;
+  }
+
+  .plan__descr {
+    font-size: 0.75rem;
   }
 
   .models {
@@ -1932,13 +1955,29 @@ body::after {
     padding: 2.1875rem 0rem;
   }
 
+  .plans__title {
+    font-size: 3.09375rem;
+  }
+
   .plans__cols {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
+  .plan__label {
+    font-size: 1.5625rem;
+  }
+
   .plan__label:not(:last-child) {
     margin-bottom: 1.25rem;
+  }
+
+  .plan__text {
+    font-size: 0.875rem;
+  }
+
+  .plan__cap {
+    font-size: 0.875rem;
   }
 
   .models__container {
@@ -2035,6 +2074,10 @@ body::after {
 
   .benefit__descr {
     font-size: 0.875rem;
+  }
+
+  .plans__title {
+    font-size: 2.625rem;
   }
 
   .plans__descr {
