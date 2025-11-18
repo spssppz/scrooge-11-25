@@ -158,7 +158,7 @@ body {
 }
 
 [class*=__container] {
-  max-width: 82.5rem;
+  max-width: 75rem;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 0 auto;
@@ -929,13 +929,13 @@ body::after {
   text-align: center;
   position: relative;
   z-index: 3;
-  font-size: 4.5rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: 900;
 }
 
 .plans__title:not(:last-child) {
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.25rem;
 }
 
 .plans__cols {
@@ -949,7 +949,7 @@ body::after {
 }
 
 .plans__cols:not(:last-child) {
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.25rem;
 }
 
 .plans__descr {
@@ -976,7 +976,7 @@ body::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1.5625rem 1.5625rem 1.25rem;
+  padding: 1.25rem 1rem;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
@@ -985,33 +985,33 @@ body::after {
 
 .plan__label {
   font-weight: 500;
-  font-size: 2.25rem;
+  font-size: 1.5625rem;
   line-height: 1.52;
 }
 
 .plan__label:not(:last-child) {
-  margin-bottom: 0.875rem;
+  margin-bottom: 0.75rem;
 }
 
 .plan__text {
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
 }
 
 .plan__text:not(:last-child) {
-  margin-bottom: 1.4375rem;
+  margin-bottom: 1rem;
 }
 
 .plan__cap {
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
 .plan__cap:not(:last-child) {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .plan__list {
@@ -1145,7 +1145,7 @@ body::after {
 }
 
 .models__title:not(:last-child) {
-  margin-bottom: 2.125rem;
+  margin-bottom: 1.5rem;
 }
 
 .models__cols {
@@ -1175,7 +1175,7 @@ body::after {
   background: rgba(255, 255, 255, 0.03);
   border: 0.0625rem solid #6fbe3e;
   border-radius: 1.5625rem;
-  padding: 3.875rem 5.125rem 2.125rem;
+  padding: 2.5rem 6.25rem 1.5rem;
   position: relative;
 }
 
@@ -1434,7 +1434,7 @@ body::after {
   }
 }
 
-@media (max-width: 82.49875em) {
+@media (max-width: 74.99875em) {
   .top-header {
     margin-bottom: 1.25rem;
   }
@@ -1675,15 +1675,11 @@ body::after {
   }
 
   .plans__title {
-    font-size: 3.75rem;
+    font-size: 2.625rem;
   }
 
   .plans__cols {
     gap: 0.625rem;
-  }
-
-  .plans__cols:not(:last-child) {
-    margin-bottom: 1.25rem;
   }
 
   .plans__descr {
@@ -1695,15 +1691,7 @@ body::after {
   }
 
   .plan__label {
-    font-size: 1.875rem;
-  }
-
-  .plan__text {
-    font-size: 1rem;
-  }
-
-  .plan__cap {
-    font-size: 1rem;
+    font-size: 1.4375rem;
   }
 
   .plan__descr {
@@ -1956,7 +1944,7 @@ body::after {
   }
 
   .plans__title {
-    font-size: 3.09375rem;
+    font-size: 2.375rem;
   }
 
   .plans__cols {
@@ -1965,19 +1953,11 @@ body::after {
   }
 
   .plan__label {
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
   }
 
   .plan__label:not(:last-child) {
     margin-bottom: 1.25rem;
-  }
-
-  .plan__text {
-    font-size: 0.875rem;
-  }
-
-  .plan__cap {
-    font-size: 0.875rem;
   }
 
   .models__container {
@@ -1985,7 +1965,7 @@ body::after {
   }
 
   .models__title:not(:last-child) {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.25rem;
   }
 
   .models__cols {
@@ -2077,7 +2057,7 @@ body::after {
   }
 
   .plans__title {
-    font-size: 2.625rem;
+    font-size: 2rem;
   }
 
   .plans__descr {
